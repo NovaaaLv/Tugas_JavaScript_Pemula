@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: arial;
+      }
+      table {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+      }
+      hr {
+        width: "100%";
+        color: "black";
+      }
+    </style>
+  </head>
+  <body>
+    <script src="OnBlur_And_Onfocus.js"></script>
+    <h1>Latihan Onblur dan Onfocus</h1>
+    <hr />
+    <h3>R E G I S T R A S I</h3>
+    <hr />
+    <form name="f" method="get">
+      <table>
+        <tr>
+          <td>Nim</td>
+          <td>:</td>
+          <td>
+            <input
+              type="text"
+              name="inim"
+              size="9"
+              onfocus="window.status='Silahkan Masukan Nim Anda';"
+              onblur="masukannim()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Nama</td>
+          <td>:</td>
+          <td>
+            <input
+              type="text"
+              name="inama"
+              size="15"
+              onfocus="window.status='Silahkan Masukan Nama Anda';"
+              onblur="masukannama()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Alamat</td>
+          <td>:</td>
+          <td>
+            <input
+              type="text"
+              name="ialamat"
+              size="18"
+              onfocus="window.status='Silahkan Masukan Nim Anda';"
+              onblur="masukanalamat()"
+            />
+          </td>
+        </tr>
+      </table>
+      <hr />
+      <p>
+        <input type="button" value="Kirim" onclick="terimakasih()" />
+        <input type="reset" value="Ulang" />
+      </p>
+    </form>
+  </body>
+</html>
